@@ -1,0 +1,13 @@
+<div class="card m-5 p-2">
+  <div>You asked:</div>
+  <%= p params[:questiontocoach]  %>
+</div>
+
+<div class="card m-5 p-2">
+  <div>The coach answered:</div>
+  <%= p @answer %>
+</div>
+
+<div class="mx-5">
+  <%= link_to "Ask a new question", ask_path %>
+</div>
